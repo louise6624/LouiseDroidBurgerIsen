@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderInfosActivity"
+    android:background="@color/blue_droid">
+
+    <TextView
+        android:id="@+id/thanksTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/bungee"
+        android:text="@string/merci_pour_ta_commande"
+        android:textColor="#FF7396"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/firstNameRetrievedTextView"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
+        android:text="@string/firstname"
+        android:textColor="#FF7397"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/thanksTextView"
+        app:layout_constraintStart_toEndOf="@+id/thanksTextView"
+        app:layout_constraintTop_toTopOf="@+id/thanksTextView" />
+
+    <TextView
+        android:id="@+id/recapitulatifTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/bungee"
+        android:text="@string/r_capitulatif"
+        android:textColor="#FF7396"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thanksTextView" />
+
+    <ImageView
+        android:id="@+id/dot1"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recapitulatifTextView"
+        app:srcCompat="@drawable/dot" />
+
+    <TextView
+        android:id="@+id/nameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/bungee"
+        android:text="@string/nom"
+        app:layout_constraintBottom_toBottomOf="@+id/dot1"
+        app:layout_constraintStart_toEndOf="@+id/dot1"
+        app:layout_constraintTop_toTopOf="@+id/dot1" />
+
+    <TextView
+        android:id="@+id/customerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/bungee"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/nameTitle"
+        app:layout_constraintStart_toEndOf="@+id/nameTitle"
+        app:layout_constraintTop_toTopOf="@+id/nameTitle" />
+
+    <ImageView
+        android:id="@+id/dot2"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/dot1"
+        app:layout_constraintStart_toStartOf="@+id/dot1"
+        app:layout_constraintTop_toBottomOf="@+id/dot1"
+        app:srcCompat="@drawable/dot" />
+
+    <TextView
+        android:id="@+id/firstNameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/bungee"
+        android:text="Prénom :"
+        app:layout_constraintBottom_toBottomOf="@+id/dot2"
+        app:layout_constraintStart_toEndOf="@+id/dot2"
+        app:layout_constraintTop_toTopOf="@+id/dot2" />
+
+    <TextView
+        android:id="@+id/customerFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/bungee"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/firstNameTitle"
+        app:layout_constraintStart_toEndOf="@+id/firstNameTitle"
+        app:layout_constraintTop_toTopOf="@+id/firstNameTitle" />
+
+    <ImageView
+        android:id="@+id/dot3"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="@+id/dot2"
+        app:layout_constraintTop_toBottomOf="@+id/dot2"
+        app:srcCompat="@drawable/dot" />
+
+    <TextView
+        android:id="@+id/addressTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/adresse_title"
+        android:textSize="15dp"
+        android:fontFamily="@font/bungee"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dot3"
+        app:layout_constraintStart_toEndOf="@+id/dot3"
+        app:layout_constraintTop_toTopOf="@+id/dot3" />
+
+    <TextView
+        android:id="@+id/customerAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:fontFamily="@font/bungee"
+        android:text="TextView"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/addressTitle"
+        app:layout_constraintStart_toEndOf="@+id/addressTitle"
+        app:layout_constraintTop_toTopOf="@+id/addressTitle" />
+
+    <TextView
+        android:id="@+id/burgerChoiceTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/bungee"
+        android:text="~ Votre burger ~"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customerAddress" />
+
+    <TextView
+        android:id="@+id/customerBurgerChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
+        android:text="TextView"
+        android:textColor="@color/pink_droid"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/burgerChoiceTitle"
+        app:layout_constraintStart_toStartOf="@+id/burgerChoiceTitle"
+        app:layout_constraintTop_toBottomOf="@+id/burgerChoiceTitle" />
+
+    <ImageView
+        android:id="@+id/burgerImage"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="@+id/customerBurgerChoice"
+        app:layout_constraintStart_toStartOf="@+id/customerBurgerChoice"
+        app:layout_constraintTop_toBottomOf="@+id/customerBurgerChoice"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/timeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
+        android:text="@string/heure_de_livraison"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/burgerImage"
+        app:layout_constraintStart_toStartOf="@+id/burgerImage"
+        app:layout_constraintTop_toBottomOf="@+id/burgerImage" />
+
+    <TextView
+        android:id="@+id/customerTimeChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
+        android:text="TextView"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/timeTitle"
+        app:layout_constraintStart_toStartOf="@+id/timeTitle"
+        app:layout_constraintTop_toBottomOf="@+id/timeTitle" />
+
+    <ImageView
+        android:id="@+id/dot4"
+        android:layout_width="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="10dp"
+        app:layout_constraintStart_toStartOf="@+id/dot3"
+        app:layout_constraintTop_toBottomOf="@+id/dot3"
+        app:srcCompat="@drawable/dot" />
+
+    <TextView
+        android:id="@+id/phoneTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/bungee"
+        android:text="@string/t_l_phone"
+        app:layout_constraintBottom_toBottomOf="@+id/dot4"
+        app:layout_constraintStart_toEndOf="@+id/dot4"
+        app:layout_constraintTop_toTopOf="@+id/dot4" />
+
+    <TextView
+        android:id="@+id/customerPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/bungee"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/phoneTitle"
+        app:layout_constraintStart_toEndOf="@+id/phoneTitle"
+        app:layout_constraintTop_toTopOf="@+id/phoneTitle"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/pink_droid"
+        android:text="@string/confirmer"
+        app:layout_constraintEnd_toEndOf="@+id/customerTimeChoice"
+        app:layout_constraintStart_toStartOf="@+id/customerTimeChoice"
+        app:layout_constraintTop_toBottomOf="@+id/customerTimeChoice" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
